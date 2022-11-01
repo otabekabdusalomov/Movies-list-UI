@@ -3,21 +3,18 @@
     <div class="content">
       <AppInfo />
       <div class="search-panel">
-         <SearchPanel />
-         <AppFilter />
+        <SearchPanel />
+        <AppFilter />
       </div>
+      
 
       <MovieList />
       <MovieAddForm />
     </div>
-
-
-
-
-
-
-
-
+    
+    
+    
+        
     <!-- <starter-information /> -->
     
   </div>
@@ -27,10 +24,13 @@
 <script>
 import StarterInformation from './Course all/StarterInformation.vue'
 import AppInfo from './Components/app-info/AppInfo.vue'
-import SearchPanel from './Components/app-info/SearchPanel/SearchPanel.vue'
-import AppFilter from './Components/app-info/App-filter/AppFilter.vue'
+import SearchPanel from './Components/SearchPanel/SearchPanel.vue'
+import AppFilter from './Components/App-filter/AppFilter.vue'
 import MovieList from './Components/MovieList/MovieList.vue'
 import MovieAddForm from './Components/Movie-add-form/MovieAddForm.vue'
+
+
+
 export default {
   components: { 
     StarterInformation,
@@ -39,7 +39,7 @@ export default {
     AppFilter,
     MovieList,
     MovieAddForm,
-
+    
   },
   
 }
@@ -60,7 +60,6 @@ export default {
   margin-top: 2rem;
   padding: 1.5rem;
   background-color: #fcfaf5;
-  border-radius: 4px;
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.15);
 }
 </style>
