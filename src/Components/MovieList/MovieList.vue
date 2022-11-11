@@ -30,7 +30,7 @@ export default {
                     name: "Ertugrul",
                     viewers: 450,
                     favourite: true,
-                    like: false
+                    like: false,
                 },
                 {
                     name: "Dasturchi",
