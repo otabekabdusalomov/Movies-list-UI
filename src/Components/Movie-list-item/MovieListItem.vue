@@ -1,7 +1,7 @@
 <template>
     <li class="movies-list-item d-flex justify-content-between">
-        <span class="movies-list-item-label">Legioner</span>
-        <input class="movies-list-item-input" type="number" defaultValue="811">
+        <span class="movies-list-item-label">{{movie.name}}</span>
+        <input class="movies-list-item-input" type="number" :value="movie.viewers">
 
         <div class="d-flex justify-content-center align-items-center">
               <button class="btn-cookie btn-sm">
@@ -22,7 +22,12 @@
 
 <script>
 export default {
-    
+    props: {
+      movie: {
+        type: Object,
+        required: true,
+      },
+    },
 }
 </script>
 
